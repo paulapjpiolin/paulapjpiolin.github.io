@@ -1,0 +1,47 @@
+header {
+    background-color: #c883b6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+
+    .centered {
+        display: flex
+    }
+}
+
+p footer {
+    background-color: #d793be;
+}
+
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 50%;
+    text-align: left;
+}
+
+.p class "main-paragraph">.heading-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-section {
+    max-width: 300px;
+    margin: auto;
+}
+
+.nav {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    border: solid darkslateblue 5px;
+    background-color: aliceblue;
+    padding: 15px 15px;
+    border-radius: 30px;
+}

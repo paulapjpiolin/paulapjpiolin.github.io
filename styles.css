@@ -5,10 +5,19 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1%;
+    border-radius: 50px;
+}
 
-    .centered {
-        display: flex
-    }
+.centered {
+    display: flex border-radius: 50px;
+}
+
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 p footer {
@@ -24,7 +33,7 @@ p footer {
     text-align: left;
 }
 
-.p class "main-paragraph">.heading-text {
+.p main-paragraph.heading-text {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,4 +53,127 @@ p footer {
     background-color: aliceblue;
     padding: 15px 15px;
     border-radius: 30px;
+}
+
+/* {
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.foto-card {
+    background-color: rgb(213, 132, 107);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.paper-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.paper-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.paper-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.paper-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.paper-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.paper-card h4 {
+    margin-top: 10px;
+}
+
+.paper-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.image-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image-btn:hover {
+    background-color: #e63950;
+}
+
+.image-gallery {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
 }

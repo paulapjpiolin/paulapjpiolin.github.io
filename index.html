@@ -4,44 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DREAM DESIGNS</title>
     <link rel="stylesheet" href="styles.css">
+    <title>We Design Transfers</title>
 </head>
 
-<body>
-    <header>
-        <div>
 
-            <img src="assets/logo.jpg" alt="logo" height="200" class="head-image" />
-        </div>s
 
-        <div class="intro">
+<header>
+    <div>
+        <img src="assets/logo.jpg" alt="logo" height="200" class="head-image">
+    </div>
+
+    <div class="intro"></div>
+</header>
+
+<main>
+
+    <div class="main-title">
+        <h1>WE DESIGN TRANSFERS</h1>
+        <h2>GELATIN - CAKES - DESSERTS</h2>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_0401 (1).jpg" style="width:40%" class="foto-card">
+            <div class="text">Disney Princess</div>
         </div>
 
-    </header>
-    <div id="greeting"></div>
-    <main>
-
-        <div class="centered">
-            <h1>WE DESIGN TRANSFERS FOR GELATIN, CAKES AND ALL KIND OF DESSERTS </h1>
+        <div class="mySlides fade">
+            <img src="assets/IMG_0569.PNG" style="width:40%" class="foto-card">
+            <div class="text">Cars</div>
         </div>
-        <div class="main-paragraph">
 
-            <h2>What kind of transfer do you need?</h2>
-
-
-            <nav class="nav">
-                <a href="gelatin.html" class="link">GELATIN TRANSFER</a>
-                <a href="cake.html" class="link">CAKE TRANSFER</a>
-                <a href="dessert.html" class="link">OTHER DESSERT TRANSFERS</a>
-            </nav>
-
-
-            <footer>
-
-            </footer>
-
+        <div class="mySlides fade">
+            <img src="assets/IMG_0600.jpg" style="width:40%" class="foto-card">
+            <div class="text">Mickey Mouse and Friends</div>
         </div>
-        <!-- <script src="index.js"></script> -->
-</body>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_3463.PNG" style="width:40%" class="foto-card">
+            <div class="text">Coco Melon</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_4488.jpg" style="width:40%" class="foto-card">
+            <div class="text">Book Cover</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6736.jpg" style="width:40%" class="foto-card">
+            <div class="text">Minnie Mouse</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6737 (1).jpg" style="width:40%" class="foto-card">
+            <div class="text">Minnie and Mickey Mouse</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6738.jpg" style="width:40%" class="foto-card">
+            <div class="text">Frozen</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6740.jpg" style="width:40%" class="foto-card">
+            <div class="text">Piggy</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6742.jpg" style="width:40%" class="foto-card">
+            <div class="text">Unicorn</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6746.jpg" style="width:40%" class="foto-card">
+            <div class="text">Doggie</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/IMG_6754.jpg" style="width:40%" class="foto-card">
+            <div class="text">Beer</div>
+        </div>
+
+    </div>
+
 </main>
+
+<script>
+    var slideIndex = 0;
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > x.length) {
+            slideIndex = 1;
+        }
+
+        x[slideIndex - 1].style.display = "block";
+
+        setTimeout(carousel, 2000);
+    }
+
+    carousel();
+</script>
+
+</div>
+
+<div class="paper-container">
+
+    <div class="paper-card">
+        <img src="assets/gelatin paper.jpg" alt="Gelatin Paper">
+        <h4>Gelatin Paper</h4>
+        <p>Perfect for decorating gelatin desserts.</p>
+    </div>
+
+    <div class="paper-card">
+        <img src="assets/cake paper.jpg" alt="Cake Paper">
+        <h4>Cake Transfer Paper</h4>
+        <p>Used for edible cake decorations.</p>
+    </div>
+
+    <div class="paper-card">
+        <img src="assets/dessert paper.jpg" alt="Dessert Paper">
+        <h4>Dessert Paper</h4>
+        <p>Ideal for cupcakes and small desserts.</p>
+    </div>
+
+
+
+</div>
+<div class="centered">
+    <a href="galeria.html">
+        <button onclick="showImages()" class="image-btn">Most Used Images</button>
+    </a>
+</div>
+
+<div id="imageGallery" class="image-gallery">
+
+    <img src="assets/image1.jpg" alt="Image 1">
+    <img src="assets/image2.jpg" alt="Image 2">
+    <img src="assets/image3.jpg" alt="Image 3">
+
+</div>
+
+</html>

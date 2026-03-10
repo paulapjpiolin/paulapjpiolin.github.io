@@ -1,15 +1,15 @@
 header {
     background-color: #c883b6;
-    color: white;
+    color: rgb(244, 238, 238);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1%;
-    border-radius: 50px;
+    border-radius: 200px;
 }
 
 .centered {
-    display: flex border-radius: 50px;
+    display: flex border-radius: 100px;
 }
 
 
@@ -55,9 +55,6 @@ p footer {
     border-radius: 30px;
 }
 
-/* {
-    box-sizing: border-box;
-} */
 
 body {
     font-family: Verdana, sans-serif;
@@ -78,7 +75,7 @@ body {
 }
 
 .foto-card {
-    background-color: rgb(213, 132, 107);
+    background-color: rgba(137, 212, 220, 0.654);
     width: fit-content;
     padding: 20px;
     border-radius: 20px;
@@ -112,7 +109,7 @@ body {
 }
 
 .paper-card {
-    background: white;
+    background: rgb(19, 162, 184);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
@@ -129,7 +126,7 @@ body {
 }
 
 .paper-card {
-    background: white;
+    background: rgba(186, 71, 218, 0.271);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
@@ -148,32 +145,171 @@ body {
 
 .paper-card p {
     font-size: 14px;
-    color: #555;
+    color: #181116;
 }
 
 .image-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ff4d6d;
-    color: white;
-    border: none;
+    padding: 30px 30px;
+    font-size: 30px;
+    background-color: #ff9eb0;
+    color: rgb(24, 16, 16);
+    border: 20px;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .image-btn:hover {
-    background-color: #e63950;
+    background-color: #a23f4c;
 }
 
 .image-gallery {
     display: none;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .image-gallery img {
-    width: 200px;
+    width: 50px;
     margin: 10px;
     border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #ff4b4b;
+}
+
+.whatsapp-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+.reviews-section {
+    padding: 40px;
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.hero-header {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-logo {
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.hero-overlay h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background: #ff4b4b;
+}
+
+.facebook-btn {
+    background: #1877F2;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.facebook-btn:hover {
+    background: #145dbf;
 }

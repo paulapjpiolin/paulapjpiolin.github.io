@@ -285,15 +285,8 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-button {
-    background: #ff6b6b;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 6px;
-    font-weight: bold;
-}
+
+
 
 .hero-button:hover {
     background: #ff4b4b;
@@ -313,3 +306,11 @@ body {
 .facebook-btn:hover {
     background: #145dbf;
 }
+
+<style>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+</style>

@@ -344,3 +344,91 @@ body {
     height: 200px;
     object-fit: cover;
 }
+
+.contact-section {
+    text-align: center;
+    padding: 40px;
+    background: #fff6f6;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.email {
+    background: #444;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+}
+
+.site-footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-footer h3,
+.site-footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.site-footer a {
+    color: #f8c146;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}

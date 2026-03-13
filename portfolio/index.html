@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Design Transfers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HERO HEADER -->
+    <header class="hero-header">
+        <div class="hero-overlay">
+            <img src="assets/logo.jpg" class="hero-logo" alt="We Design Transfers Logo">
+            <h1>WE DESIGN TRANSFERS</h1>
+            <h2>Gelatin • Cakes • Desserts</h2>
+            <p>Custom edible designs for your special celebrations</p>
+        </div>
+    </header>
+
+    <!-- SLIDESHOW -->
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides"><img src="assets/IMG_0401.jpg" alt="Dessert 1"></div>
+            <div class="mySlides"><img src="assets/IMG_0569.PNG" alt="Dessert 2"></div>
+            <div class="mySlides"><img src="assets/IMG_0600.jpg" alt="Dessert 3"></div>
+            <div class="mySlides"><img src="assets/IMG_3463.PNG" alt="Dessert 4"></div>
+        </div>
+    </main>
+
+    <!-- PAPER CARDS -->
+    <div class="paper-container">
+        <div class="paper-card">
+            <img src="assets/gelatin paper.jpg" alt="Gelatin Paper">
+            <h4>Gelatin Paper</h4>
+            <p>Perfect for decorating gelatin desserts.</p>
+        </div>
+        <div class="paper-card">
+            <img src="assets/cake paper.jpg" alt="Cake Paper">
+            <h4>Cake Paper</h4>
+            <p>Used for edible cake decorations.</p>
+        </div>
+        <div class="paper-card">
+            <img src="assets/dessert paper.jpg" alt="Dessert Paper">
+            <h4>Dessert Paper</h4>
+            <p>Ideal for cupcakes and small desserts.</p>
+        </div>
+    </div>
+
+    <!-- MOST USED IMAGES BUTTON -->
+    <div class="centered">
+        <button onclick="showImages()" class="image-btn">Most Used Images</button>
+    </div>
+
+    <div id="mostUsedImages" class="most-used-gallery">
+        <img src="assets/Mario Bro.jpg" alt="Mario">
+        <img src="assets/lilo and stitch.webp" alt="Lilo and Stitch">
+        <img src="assets/Messi.jpg" alt="Messi">
+        <img src="assets/minecraft.jpg" alt="Minecraft">
+    </div>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <p>See what our happy customers say about our custom dessert designs!</p>
+        <div class="review-container">
+            <div class="review-card">
+                <h4>Maria S.</h4>
+                <p>"The cake designs were absolutely stunning! Everyone loved them."</p>
+            </div>
+            <div class="review-card">
+                <h4>John D.</h4>
+                <p>"Amazing edible designs! The gelatin decorations were perfect."</p>
+            </div>
+            <div class="review-card">
+                <h4>Lucia P.</h4>
+                <p>"Quick response, professional work, and the desserts looked amazing."</p>
+            </div>
+            <div class="review-card">
+                <h4>David K.</h4>
+                <p>"Highly recommend! My son's cake was a hit with the superheroes design."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact-section">
+        <h2>Custom Dessert Designs</h2>
+        <p>If you want a custom design for your gelatin, cakes, or desserts, please contact us.</p>
+        <div class="contact-buttons">
+            <a href="https://facebook.com" class="facebook">Facebook</a>
+            <a href="mailto:your@email.com" class="email">Email</a>
+            <a href="https://wa.me/15555555555" class="whatsapp">WhatsApp</a>
+            <a href="https://maps.google.com" class="map">Location Map</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-bottom">
+        <p>© 2026 We Design Transfers | All Rights Reserved</p>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // SLIDESHOW
+        let slideIndex = 0;
+        function carousel() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+        carousel();
+
+        // SHOW GALLERY
+        function showImages() {
+            let gallery = document.getElementById("mostUsedImages");
+            gallery.style.display = (gallery.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
+
+</body>
+
+</html>
